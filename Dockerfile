@@ -8,5 +8,4 @@ RUN git clone https://github.com/etsy/statsd.git \
 
 COPY config.js /opt/statsd/
 
-STOPSIGNAL SIGKILL
 CMD ["node", "/opt/statsd/stats.js", "/opt/statsd/config.js"]
